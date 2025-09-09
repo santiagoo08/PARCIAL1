@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h3 class="text-center mb-4">Ingrese los datos para registrarse</h3>
+
+    <form id="signupForm" class="border p-4 rounded shadow-sm">
+<div class="row mb-3">
+        <div class="col">
+        <label for="nombres" class="form-label">Nombres</label>
+        <input type="text" class="form-control" id="nombres" required>
+        </div>
+        <div class="col">
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" required>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" required>
+        </div>
+    </div>
+<div class="row mb-3">
+        <div class="col">
+        <label for="estrato" class="form-label">Estrato</label>
+        <input type="number" class="form-control" id="estrato" min="1" max="6" required>
+        </div>
+        <div class="col">
+        <label for="fecha" class="form-label">Fecha Nacimiento</label>
+        <input type="date" class="form-control" id="fecha" required>
+        </div>
+        <div class="col">
+        <label for="sangre" class="form-label">Grupo Sanguíneo</label>
+        <select class="form-select" id="sangre" required>
+            <option value="">Seleccione</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Género:</label><br>
+        <input type="radio" name="genero" value="Masculino" required> Masculino
+        <input type="radio" name="genero" value="Femenino"> Femenino
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Actividades Favoritas:</label><br>
+        <input type="checkbox" value="Futbol"> Futbol
+        <input type="checkbox" value="Baloncesto"> Baloncesto
+        <input type="checkbox" value="Voleibol"> Voleibol
+        <input type="checkbox" value="Ciclismo"> Ciclismo
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-success">Registrar</button>
+        <a href="admin.html" class="btn btn-danger">Cancelar</a>
+    </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="sign.js"></script>
+</body>
+</html>
